@@ -1,0 +1,145 @@
+
+// Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+//Color Guide
+
+:root {
+    --main-color: #007AF3;
+}
+
+body {
+    background: #F2F2F2;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+// Navigation
+
+.navbar {
+    background-color: white;
+    padding: 1em;
+    display: flex;
+    place-content: space-between;
+
+    .logo {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        font-size: 1.2em;
+
+        span {
+            color: var(--main-color)
+        }
+    }
+    
+    nav {
+        display: none;
+    }
+
+    .Mobile-menu {
+        cursor: pointer;
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+// Hero Section
+
+.hero {
+text-align: center;
+}
+    .left-col {
+
+        .subhead {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: gray;
+            letter-spacing: .3em;
+            }
+
+        a {
+            color: #444444;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            line-height: 1.3em;
+            margin-top: .2em;
+        }
+
+        .primary-cta {
+            background-color: var(--main-color);
+            color: white;
+            text-decoration: none;
+            padding: .6em 1.3em;
+            font-size: 1.4em;
+            border-radius: 5em;
+            font-weight: bold;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .watch-video-cta {
+            display: block;
+            margin-top: 1em;
+        }
+
+            img {
+                padding-right: .5em;
+            }
+
+}
+
+.hero-img {
+    width: 70%;
+    margin-top: 3em;
+}
+
+.features-section {
+    background-color: #20272E;
+    color: white;
+}
+
+ul.features-list {
+    margin: 0;
+    padding-left: .1em;
+
+
+    li {
+        font-size: 1.1em;
+        margin-bottom: 1em;
+        margin-left: 2em;
+        position: relative;
+
+        &:before {
+            content: '';
+            left: -2em;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/bullet.svg');
+            background-size: contain;
+            margin-right: .5em;
+        }
+    }
+}
+
+.features-section img {
+    display: none;
+}
+
+.testomonials-section {
+    background: var(--main-color)
+
+    
+}
