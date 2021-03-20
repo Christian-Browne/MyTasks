@@ -2,5 +2,5 @@
 
 ### Description
 
-### <a href="https://christian-browne.github.io/TaskApp/">View Project target="_blank"</a>
+### <a href="https://christian-browne.github.io/TaskApp/" target="_blank">View Project</a>
  
