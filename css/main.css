@@ -3,6 +3,10 @@
   --main-color: #FFB500;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 body {
   background: #F2F2F2;
