@@ -14,20 +14,9 @@ body {
   font-family: 'Poppins';
 }
 
-h3 {
-  margin-left:2em;
-  margin-bottom: .5em;
-  color: black;
-}
-
-.testomonials-section p {
-  color: white;
-  display: inline-block;
-  margin-left: 2em;
-  padding: .5em .8em;
-  background-color: black;
-  border-radius: 2em;
-  cursor: pointer;
+h2 {
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
@@ -59,7 +48,7 @@ h3 {
   cursor: pointer;
 }
 
-ul {
+.features-section ul, .navbar ul, .testomonials-section ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -168,14 +157,139 @@ ul.features-list li:before {
   display: none;
 }
 
+/* Pricing Section */
+
+.pricing-section {
+  
+}
+
+.pricing-title {
+  text-align: center;
+  margin-top: -1em;
+}
+
+.pricing-summary {
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-bottom: 2em;
+}
+
+
+/* Pricing Cards  */
+
+.pricing-cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  
+}
+
+.essential-card {
+  display: inline-block;
+  background: var(--main-color);
+  border-radius: 1em;
+  text-align: center;
+  padding: 3em;
+  color: white;
+  margin-bottom: 3em;
+}
+
+.free-card {
+  display: inline-block;
+  background:#2c2c2c;
+  border-radius: 1em;
+  text-align: center;
+  padding: 3em;
+  color: white;
+  margin-bottom: 3em;
+}
+
+.premium-card {
+  display: inline-block;
+  background: #2c2c2c;
+  border-radius: 1em;
+  text-align: center;
+  padding: 3em;
+  color: white;
+  margin-bottom: 3em;
+}
+
+.essential-card .title, .free-card .title, .premium-card .title {
+  margin-bottom: -1em;
+}
+
+.essential-card .price, .free-card .price, .premium-card .price {
+  font-size: 3em;
+  margin-top: .2em;
+  margin-bottom: 0;
+}
+
+.essential-card p, .free-card p, .premium-card p  {
+  margin-top: 0;
+}
+
+/* Pricing Button Styles */
+
+.essential-btn {
+  background: white;
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: 2em;
+  margin-top: 1em;
+}
+
+.essential-btn p {
+  margin: 0;
+  color: var(--main-color);
+}
+
+.free-btn {
+  background: #2c2c2c;
+  border: solid 2px white;
+  border-radius: 1em;
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: 2em;
+  margin-top: 1em;
+}
+
+.free-btn p {
+  margin: 0;
+  color: white;
+  border-radius: 1em;
+}
+
+.premium-btn {
+  background: #2c2c2c;
+  border: solid 2px white;
+  border-radius: 1em;
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: 2em;
+  margin-top: 1em;
+}
+
+.premium-btn p {
+  margin: 0;
+  color: white;
+  border-radius: 1em;
+}
+
+
 .testomonials-section {
-  background:  #F2F2F2;
-  color: darkgray;
+  background: #2c2c2c;
+  color: rgb(207, 207, 207);
+}
+
+.testomonials-section h3 {
+  margin-left:2em;
+  margin-bottom: .5em;
+  color: white;
 }
 
 .testomonials-section li {
-  background-color: white;
-  filter: drop-shadow(0 6mm 4mm rgb(228, 228, 228));
+  /* background-color: rgb(53, 53, 63); */
   text-align: left;
   padding: 2em 1em;
   width: 80%;
@@ -190,6 +304,16 @@ ul.features-list li:before {
   margin-left: 2em;
   border-radius: 50%;
   margin-top: 0em;
+}
+
+.testomonials-section p {
+  color: white;
+  display: inline-block;
+  margin-left: 2em;
+  padding: .5em .8em;
+  border: solid 2px white;
+  border-radius: 2em;
+  cursor: pointer;
 }
 
 blockquote {
@@ -409,6 +533,11 @@ ul.features-list li::before {
   right: 0;
   width: 350px;
   bottom: -2em;
+}
+
+.pricing-summary {
+  margin-left: 5em;
+  margin-right: 5em;
 }
 
 .testomonials-section ul {
