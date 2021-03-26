@@ -231,6 +231,16 @@ ul.features-list li:before {
 
 /* Pricing Button Styles */
 
+.essential-btn, .premium-btn, .free-btn {
+  cursor: pointer;
+}
+
+.free-btn:hover, .premium-btn:hover {
+  background:var(--main-color);
+  border: 0px;
+  padding: 0.6em 1.1em;
+}
+
 .essential-btn {
   background: white;
   display: inline-block;
