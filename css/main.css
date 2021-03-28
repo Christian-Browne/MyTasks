@@ -159,22 +159,34 @@ ul.features-list li:before {
 
 /* Pricing Section */
 
-.pricing-section {
-  
+.pricing-section ul {
+  text-align: left;
+}
+
+.pricing-section li {
+  padding: .5em;
+  position: relative;
+  list-style: none;
+}
+
+.pricing-section li:before {
+  content: '';
+  left: -1.5em;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-image: url("../images/checking-mark.svg");
+  background-size: contain;
+  margin-right: .5em;
 }
 
 .pricing-title {
   text-align: center;
+  font-size: 2em;
   margin-top: -1em;
-}
-
-.pricing-summary {
-  text-align: center;
-  margin-left: 1em;
-  margin-right: 1em;
+  padding-top: 2em;
   padding-bottom: 2em;
 }
-
 
 /* Pricing Cards  */
 
@@ -193,6 +205,7 @@ ul.features-list li:before {
   padding: 3em;
   color: white;
   margin-bottom: 3em;
+  width: 300px;
 }
 
 .free-card {
@@ -203,6 +216,7 @@ ul.features-list li:before {
   padding: 3em;
   color: white;
   margin-bottom: 3em;
+  width: 300px;
 }
 
 .premium-card {
@@ -213,10 +227,12 @@ ul.features-list li:before {
   padding: 3em;
   color: white;
   margin-bottom: 3em;
+  width: 300px;
 }
 
 .essential-card .title, .free-card .title, .premium-card .title {
-  margin-bottom: -1em;
+  margin-bottom: -.5em;
+  font-size: 1.5em;
 }
 
 .essential-card .price, .free-card .price, .premium-card .price {
@@ -235,10 +251,8 @@ ul.features-list li:before {
   cursor: pointer;
 }
 
-.free-btn:hover, .premium-btn:hover {
-  background:var(--main-color);
-  border: 0px;
-  padding: 0.6em 1.1em;
+.free-btn:hover, .premium-btn:hover, .essential-btn:hover {
+  transform: scale(0.95);
 }
 
 .essential-btn {
@@ -324,6 +338,10 @@ ul.features-list li:before {
   border: solid 2px white;
   border-radius: 2em;
   cursor: pointer;
+}
+
+.testomonials-section p:hover {
+  transform: scale(0.95);
 }
 
 blockquote {
@@ -562,7 +580,7 @@ ul.features-list li::before {
   position: relative;
 }
 
-.contact-section>.container {
+.contact-section .container {
   display: flex;
 }
 
