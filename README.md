@@ -1,4 +1,4 @@
-# MyTasks
+# `- MyTasks -`
 
 ### <a href="https://mytasksapp.netlify.app/#">View Project</a>
 
